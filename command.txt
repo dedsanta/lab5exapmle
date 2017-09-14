@@ -1,0 +1,33 @@
+
+(local)
+cd papka
+
+git --version
+git config --gobal user.name "I am"
+git init
+
+git commit -m "komment"
+git status
+git add * (все)
+git add .(все из текущей директории)
+gitk показ юа по файлам
+git log (history)
+git log --pretty=oneline (вырианты вывода)
+git log --pretty=oneline --all (все)
+git log --pretty=oneline --author = "имя  от кого выводить"
+git log --pretty=format:"%h - %s : %ad [%an]" --date =short 
+git checkuot f8a1800
+git checkuot master (возврат к текущему состоянию)
+git reset HEAD test.txt (можно писать коммит)
+git checkout test.txt
+git commit -m "del comm" 
+git revert HEAD --no-edit
+git branch (все ветки)
+git checkout -b newbranch (новая ветка)
+git branch
+git checkout dev
+git merge dev
+git rebase (поддянуть из другой дирр)
+
+ git remote add origin https://github.com/dedsanta/git-test.git
+git push -u origin master
